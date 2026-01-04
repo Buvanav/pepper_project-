@@ -1,12 +1,12 @@
 import streamlit as st
 import tensorflow as tf
-from keras.models import load_model
-from keras.preprocessing import image
-
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing import image
 import numpy as np
 
+
 # Load your model
-model = load_model('pepper_mobilenet_model.h5')
+model = load_model('pepper_mobilenet_model.h5', compile=False)
 
 st.title("Pepper Health Detector 🌶️")
 
